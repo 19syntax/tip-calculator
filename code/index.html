@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-item1">
+            <div class="bill">
+                <label>Bill</label>
+                <div class="input-logo">
+                    <img src="../images/icon-dollar.svg" alt="">
+                    <input class="input-logo-text" id="tip-input" type="text" dir="rtl">
+                </div>
+                <p class="error js-bill-error"></p>
+                
+            </div>
+            <div>
+                <label class="select-tip">Select Tip %</label>
+                <div class="grid-box">
+                    <button class="btn-percent1  grid-item">5%</button>
+                    <button class="btn-percent2  grid-item">10%</button>
+                    <button class="btn-percent3  grid-item">15%</button>
+                    <button class="btn-percent4  grid-item">25%</button>
+                    <button class="btn-percent5  grid-item">50%</button>
+                    <input type="text" dir="rtl" class="grid-input js-grid-input">
+                    <button class="btn-percent6 grid-item">Custom</button>
+                </div>
+            </div>
+            <div>
+                <label class="select-tip">Number of People</label>
+                <div class="input-logo">
+                    <img src="../images/icon-person.svg" alt="">
+                    <input class="input-logo-text" dir="rtl" id="input-person" type="text" >
+                </div>
+                <p class="error js-people-error"></p>
+            </div>
+            
+        </div>
+        <div class="container-item2">
+            <div>
+                <div>
+                    <p class="tip-amount">Tip Amount</p>
+                    <span class="tip-person">/ person</span>
+                </div>
+                <p class="tip-value js-tip-value" id="">$0.00</p>
+            </div>
+            <div>
+                <div>
+                    <p class="tip-amount">Total</p>
+                    <span class="tip-person">/ person</span>
+                </div>
+                <p class="tip-value js-tip-person">$0.00</p>
+            </div>
+            <button class="btn-reset">RESET</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
